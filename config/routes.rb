@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  resources :recipes
+  resources :users
+  root "articles#index"
+
+  get "/articles", to: "articles#index"
 end
